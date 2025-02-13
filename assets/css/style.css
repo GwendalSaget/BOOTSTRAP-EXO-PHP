@@ -1,0 +1,11 @@
+/* Effet hover : agrandir l'image légèrement */
+.logo{
+    width: 50%;
+}
+.img-hover:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+body{
+    background-color: darkslategray;
+}
