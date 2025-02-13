@@ -10,25 +10,35 @@
     <title>Gaming</title>
 </head>
 <body>
+<div class="bg-image position-relative" style="width: 100%; height: 100vh;">
+    <div class="position-absolute top-0 start-0 w-100 h-100" style="
+        background-image: url('assets/img/selune.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        opacity: 0.5;
+        z-index: -1;">
+    </div>
 <header>
     <!-- MENU NAVIGATION-->
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img class="logo" src="/assets/img/TeunHarm.webp" alt="TeunHarm"></a>
+            <a class="navbar-brand" href="index.html"><img class="logo" src ="assets/img/LogoTopChef.png" alt ="Logo du restaurant"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class=" navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Home</a>
+                        <a class="nav-link lien" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="produits.html">Produits</a>
+                        <a class="nav-link lien" href="produits.html">Produits</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link lien" href="contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -39,39 +49,120 @@
 <!-- Contenu principal du site -->
 <main>
     <!-- Presentation principale-->
-    <section class="container mt-5 ">
-        <h1>Découvrez nos events du moment</h1>
-        <div class="card" style="flex-direction: row">
-            <div class="card" style="padding: 10px 10px 10px 10px ; width: 30%">
-                <img src="assets/img/fifajeu.webp" class="card-img-top" alt="jeu fifa">
-                <div class="card-body">
-                    <h5 class="card-title text-center">Tournoi FC25</h5>
-                    <p class="card-text text-center">Ce vendredi 21 février à 19h avec apéro et pizzas !</p>
-                    <a href="contact.html" class="btn btn-primary">Je réserve</a>
+    <section class="container">
+        <div class="d-flex justify-content-center">
+            <img src="assets/img/LogoTopChef.png" alt="Logo du resto" class="img-fluid">
+        </div>
+        <div class="pb-5">
+            <h1 class="text-white text-center" style="Font-family:'Gotham Book', sans-serif; font-size: 45px">"Comme à la télé mais en mieux"</h1>
+        </div>
+        <div>
+            <div class="p-5">
+                <h2 class="text-white text-center" style="Font-family:'Gotham Thin', sans-serif; font-size: 50px"> QUI SOMMES-NOUS ?</h2>
+            </div>
+            <div>
+                <p class="text-white text-center" style="font-family: 'Gotham XLight', sans-serif;font-size:32px">Bienvenue à La Brigade Top Chef, le restaurant inédit ouvert par M6 en collaboration avec d'anciens candidats emblématiques de l’émission ! Plongez dans l’univers de Top Chef en dégustant des plats iconiques qui ont marqué l’histoire du concours. Chaque recette, revisitée par des désormais grands noms de la cuisine française, allie créativité, audace et excellence gastronomique.
+                    Vivez une expérience immersive où chaque bouchée vous transporte dans l’intensité des épreuves culinaires.
+                    Une adresse d’exception où passion et haute cuisine se rencontrent !</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="p-5">
+            <h3 class="text-white text-center" style="Font-family:'Gotham Thin', sans-serif; font-size: 50px">NOS CHEFS</h3>
+        </div>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Matthias Marc
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Mathias Marc a brillé par sa cuisine authentique et moderne, mêlant terroir jurassien et finesse gastronomique. Dans la brigade de Philippe Etchebest, il a impressionné par sa technique et son audace, proposant des assiettes élégantes et généreuses.Il aura notament marqué l'histoire du concours avec son plat "L'Apologie de l'excès" qualifié encore aujourd'hui comme l'un des meilleurs jamais réalisé !</div>
                 </div>
             </div>
-            <div class="card" style="padding: 10px 10px 10px 10px ; width: 30%">
-                <img src="assets/img/cartespoke.webp" class="card-img-top" alt="JCC Pokémon">
-                <div class="card-body">
-                    <h6 class="card-title text-center">Pack opening JCC Pokémon</h6>
-                    <p class="card-text text-center">Le lundi 14 avril à 15h avec David Lafarge Pokémon !</p>
-                    <a href="contact.html" class="btn btn-primary">Je réserve</a>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Hugo Riboulet
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Jeune chef talentueux et perfectionniste, Hugo Riboulet s’est illustré par sa maîtrise technique et son sens du détail. Membre de la brigade de Phillipe Etchebest, il a dominé la compétition avec constance et remporte la finale face à Danny Khezzar, affirmant son statut de grand espoir de la gastronomie.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Louise Bourrat
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Première femme à remporter Top Chef en 10 ans, Louise Bourrat a impressionné par sa cuisine intuitive et métissée, mêlant influences portugaises et françaises. Dans l’équipe d’Hélène Darroze, elle a su imposer son style et décroche la victoire, confirmant son ascension dans le monde de la gastronomie.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                        Adrien Cachot
+                    </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Icône de la saison 11, Adrien Cachot a révolutionné l’émission avec sa cuisine déroutante et avant-gardiste. Membre de la brigade de Paul Pairet, il a proposé des plats audacieux et anticonformistes. Finaliste face à David Gallienne, il séduit par son univers unique et poursuit ses projets gastronomiques avec des expériences immersives.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                        Mallory Gabsi
+                    </button>
+                </h2>
+                <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Avec son énergie débordante et son talent précoce, Mallory Gabsi a marqué Top Chef par sa cuisine raffinée et créative. Demi-finaliste à seulement 23 ans sous l’aile de Hélène Darroze, il a conquis le public et ouvert son restaurant étoilé à Paris, s’imposant comme un chef incontournable.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                        Jorick Dorignac
+                    </button>
+                </h2>
+                <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Doté d’un style brut et sincère, Jorick Dorignac a marqué la compétition par son approche instinctive et son amour des produits du terroir. Sous la houlette de Paul Pairet, il s’est distingué par des assiettes généreuses et une cuisine sans artifice, se hissant parmi les candidats marquants de la saison.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                        Sarah Mainguy
+                    </button>
+                </h2>
+                <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Cheffe instinctive et engagée, Sarah Mainguy a séduit le jury avec une cuisine végétale, subtile et audacieuse. Dans l’équipe de Paul Pairet, elle a brillé par sa créativité et sa persévérance. Finaliste face à Mohamed Cheikh, elle s’impose comme une cheffe montante et développe son restaurant Vacarme à Nantes.
+
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                        Danny Khezzar
+                    </button>
+                </h2>
+                <div id="flush-collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Candidat repêché via Top Chef La Brigade Cachée, Danny Khezzar s’est imposé par sa cuisine créative et percutante, mêlant influences du monde et audace technique. Dans la brigade de Philippe Etchebest puis d'Hélène Darroze, il a impressionné par son énergie et ses assiettes vibrantes. Finaliste face à Hugo Riboulet, il s’incline en finale mais poursuit son ascension notamment sur Instagram où le chef à même collaboré avec Ronaldinho !</div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- section jeux mis en avant-->
-    <section class="container mt-5">
-        <article class="grid text-center">
-            <p>Bienvenue, retrouvez tous nos jeux dans la catégorie produits !</p>
-        </article>
-    </section>
 </main>
 
-<footer class="bg-dark text-white text-center py-3">
-    <p>&copy; 2025 Gaming Site. Tous droits réservés.</p>
+<footer class="text-white text-center py-3">
+    <p>&copy; 2025 La Brigade TopChef M6. Tous droits réservés.</p>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</div>
 </body>
 </html>

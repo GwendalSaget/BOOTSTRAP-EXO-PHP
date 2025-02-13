@@ -1,11 +1,30 @@
+:root  {
+    /*palette de couleurs charte graphique*/
+    --primary-color: #FABA35;
+    --secondary-color: #E6635A;
+    --terc-color:#021A3A;
+
+    /*TYPOGRAPHIE*/
+    --primary-font: "Gotham", serif;
+}
 /* Effet hover : agrandir l'image légèrement */
 .logo{
-    width: 50%;
+    width: 40%;
 }
 .img-hover:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease;
 }
 body{
-    background-color: darkslategray;
+    background: black !important;
+}
+
+.lien{
+    color: #a4a4a3 !important;
+    font-size: 25px !important;
+    font-family:'Gotham', sans-serif !important;
+}
+.lien:hover{
+    color: #FEC735 !important;
+    transition: transform 0.2s ease !important;
 }
