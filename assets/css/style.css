@@ -22,6 +22,7 @@ body{
     background: black !important;
 }
 
+
 .lien{
     color: white !important;
     font-size: 25px !important;
@@ -64,7 +65,7 @@ html, body {
 
 
 .accordion-button:focus {
-    box-shadow: none;
+    box-shadow: none !important;
 }
 
 .accordion-body {
@@ -72,4 +73,7 @@ html, body {
     color: white !important;
     font-family: "Gotham Book", sans-serif !important;
     font-size: 25px !important;
+}
+.card:hover{
+    border-color: #FEC735 !important;
 }
