@@ -77,3 +77,7 @@ html, body {
 .card:hover{
     border-color: #FEC735 !important;
 }
+button:hover{
+    border-color: #FEC735 !important;
+    color: #FEC735 !important;
+}
