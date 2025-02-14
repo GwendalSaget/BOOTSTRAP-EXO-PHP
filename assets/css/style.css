@@ -11,6 +11,9 @@
 .logo{
     width: 40%;
 }
+* {
+    background-color: transparent !important;
+}
 .img-hover:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease;
@@ -20,11 +23,53 @@ body{
 }
 
 .lien{
-    color: #a4a4a3 !important;
+    color: white !important;
     font-size: 25px !important;
     font-family:'Gotham', sans-serif !important;
 }
 .lien:hover{
     color: #FEC735 !important;
     transition: transform 0.2s ease !important;
+}
+
+.accordion {
+    background-color: transparent !important;
+}
+
+.accordion-item {
+    background-color: transparent !important;
+    border: none;
+}
+
+.accordion-button {
+    background-color: transparent !important; /* Légèrement transparent */
+    color: white !important;
+    font-family: Gotham, sans-serif !important;
+    font-size: 30px !important;
+}
+.accordion-button:hover {
+    background-color: transparent !important; /* Légèrement transparent */
+    color: #FEC735 !important;
+    font-family: Gotham, sans-serif !important;
+    font-size: 30px !important;
+}
+body {
+    background: url('assets/img/selune.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+html, body {
+    overflow-x: hidden;
+    height: 100%;
+}
+
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-body {
+    background-color: transparent !important;
+    color: white !important;
+    font-family: "Gotham Book", sans-serif !important;
+    font-size: 25px !important;
 }
