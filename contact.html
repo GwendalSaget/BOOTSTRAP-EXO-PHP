@@ -7,51 +7,268 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <title>Réservation</title>
+    <title>Carte</title>
 </head>
 <body>
-<header>
-    <!-- MENU NAVIGATION-->
-    <nav class="navbar navbar-expand-lg " style="background-color: #2F4F4F">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img class="logo" src="/assets/img/TeunHarm.webp" alt="TeunHarm"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="produits.html">Produits</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
+<div class="bg-image position-relative" style="width: 100%;">
+    <div class="position-absolute top-0 start-0 w-100 h-100" style="
+        background-image: url('assets/img/topchef2.jpeg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        opacity: 0.2;
+        z-index: -1;">
+    </div>
+    <header>
+        <!-- MENU NAVIGATION-->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img class="logo" src ="assets/img/LogoTopChef.png" alt ="Logo du restaurant"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class=" navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link lien" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link lien" href="produits.html">Produits</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link lien" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
-    <!-- FIN MENU NAVIGATION-->
-</header>
-<!-- Contenu principal du site -->
-<main>
-    <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-    </div>
-    <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-    </div>
-</main>
+        </nav>
+        <!-- FIN MENU NAVIGATION-->
+    </header>
+    <!-- Contenu principal du site -->
+    <main>
+        <!-- Presentation principale-->
+        <section class="container">
+            <div class="p-5">
+                <h1 class="text-white text-center" style="Font-family:'Gotham Book', sans-serif; font-size: 45px">"Terroir et créativité sans limite,<br>plus qu'une devise, un état d'esprit..."</h1>
+            </div>
+            <div>
+                <div class="p-5">
+                    <h2 class="text-white text-center" style="Font-family:'Gotham Thin', sans-serif; font-size: 50px">LA CARTE - MENU DÉCOUVERTE BRIGADE</h2>
+                </div>
+                <section>
+                    <div>
+                        <p class="text-white text-center p-5" style="font-family: 'Gotham XLight', sans-serif;font-size:42px">Entrées</p>
+                    </div>
+                    <div class="d-flex flex-direction-row justify-content-evenly">
+                        <div class="card p-5 text-center" style="width: 25rem; font-family: 'Gotham', sans-serif; color: white; font-size: 25px; border-color: white">
+                            <div class="card-header">
+                                La Nappe de Louise
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item text-center" style="font-family: 'Gotham XLight', sans-serif; color: white; font-size: 13px">Subtile création plus vraie que nature, ce trompe l'oeil de nappe ne fait pas dans la dentelle niveau saveure !</li>
+                                <li class="list-group-item text-center" style="font-family: 'Gotham XLight', sans-serif; color: white; font-size: 20px">Calamar, Wasabi et Riz soufflé</li>
+                                <li class="list-group-item text-center" style="font-family: 'Gotham XLight', sans-serif; color: white; font-size: 20px">Allergènes - Fruits de mer, oeufs</li>
+                            </ul>
+                        </div>
+                        <div class="card p-5 text-center" style="width: 25rem; font-family: 'Gotham', sans-serif; color: white; font-size: 25px; border-color: white">
+                            <div class="card-header">
+                                L'Assiette vide d'Hugo
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item text-center" style="font-family: 'Gotham XLight', sans-serif; color: white; font-size: 13px">Cette assiette a beau sembler vide, pour autant si vous la retournez... Même Stéphane Rotenberg s'est fait avoir !</li>
+                                <li class="list-group-item text-center" style="font-family: 'Gotham XLight', sans-serif; color: white; font-size: 20px">Estragon, Ciboullete, Shiso, Poisson et Légumes de saison</li>
+                                <li class="list-group-item text-center" style="font-family: 'Gotham XLight', sans-serif; color: white; font-size: 20px">Allergènes - Aucun</li>
+                            </ul>
+                        </div>
+                        <div class="card p-5 text-center" style="width: 25rem; font-family: 'Gotham', sans-serif; color: white; font-size: 25px; border-color: white">
+                            <div class="card-header">
+                                L'Apologie de l'Excès de Matthias
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item text-center" style="font-family: 'Gotham XLight', sans-serif; color: white; font-size: 13px">Peut-être le meilleur plat de l'histoire du concours d'après Phillipe Etchebest ! 3 condiments excessivement gras, sucré, pimenté et acide pour une harmonie parfaite en bouche.</li>
+                                <li class="list-group-item text-center" style="font-family: 'Gotham XLight', sans-serif; color: white; font-size: 20px">Condiments : Chocolat blanc, Piment de Cayenne, Citron Yuzu, Mousse de Beurre, Tartelette équilibrée</li>
+                                <li class="list-group-item text-center" style="font-family: 'Gotham XLight', sans-serif; color: white; font-size: 20px">Allergènes - Lactose</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div>
+                        <p class="text-white text-center p-5" style="font-family: 'Gotham XLight', sans-serif;font-size:42px">Plats</p>
+                    </div>
+                    <div class="d-flex flex-direction-row justify-content-evenly">
+                        <div class="card p-5 text-center" style="width: 25rem; font-family: 'Gotham', sans-serif; color: white; font-size: 25px; border-color: white">
+                            <div class="card-header">
+                                Huîtres et Lard au Flambadou d'Adrien
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item text-center" style="font-family: 'Gotham XLight', sans-serif; color: white; font-size: 13px">Un véritable show culinaire et une idée farfelue comme seul Adrien est capable de trouver. Profitez de ce spectacle aussi bein visuel que gustatif sans modération !</li>
+                                <li class="list-group-item text-center" style="font-family: 'Gotham XLight', sans-serif; color: white; font-size: 20px">Huîtres, Lard de porc</li>
+                                <li class="list-group-item text-center" style="font-family: 'Gotham XLight', sans-serif; color: white; font-size: 20px">Allergènes - Fruits de mer</li>
+                            </ul>
+                        </div>
+                        <div class="card p-5 text-center" style="width: 25rem; font-family: 'Gotham', sans-serif; color: white; font-size: 25px; border-color: white">
+                            <div class="card-header">
+                                Apocalypse 2063 de Jorick
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item text-center" style="font-family: 'Gotham XLight', sans-serif; color: white; font-size: 13px">Et si notre future alimentation ne se constituait que d'aliments liquides ? Eh bien Jorick n'aura pas eu poeur de revisiter un boeuf bourguignon de cette façon pour impressioner le chef Muñoz.</li>
+                                <li class="list-group-item text-center" style="font-family: 'Gotham XLight', sans-serif; color: white; font-size: 20px">Boeuf, Vin rouge, Carottes, Pommes de terre</li>
+                                <li class="list-group-item text-center" style="font-family: 'Gotham XLight', sans-serif; color: white; font-size: 20px">Allergènes - Aucun</li>
+                            </ul>
+                        </div>
+                        <div class="card p-5 text-center" style="width: 25rem; font-family: 'Gotham', sans-serif; color: white; font-size: 25px; border-color: white">
+                            <div class="card-header">
+                                Burger Frites 140 Street de Mallory et Adrien
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item text-center" style="font-family: 'Gotham XLight', sans-serif; color: white; font-size: 13px">140 Street c'est le pari fou d'Adrien et Mallory de proposer une friterie à la Guerre des Restos ! Pari gagnat puisque le restaurant à même ouvert ses portes pour de vrai à la fin de l'émission.</li>
+                                <li class="list-group-item text-center" style="font-family: 'Gotham XLight', sans-serif; color: white; font-size: 20px">Burger poulet ou veggie, Pomme de terre paillasson, Frites </li>
+                                <li class="list-group-item text-center" style="font-family: 'Gotham XLight', sans-serif; color: white; font-size: 20px">Allergènes - Aucun</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div>
+                        <p class="text-white text-center p-5" style="font-family: 'Gotham XLight', sans-serif;font-size:42px">Desserts</p>
+                    </div>
+                    <div class="d-flex flex-direction-row justify-content-evenly">
+                        <div class="card p-5 text-center" style="width: 25rem; font-family: 'Gotham', sans-serif; color: white; font-size: 25px; border-color: white">
+                            <div class="card-header">
+                                Dessert aux Champignons de Sarah
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item text-center" style="font-family: 'Gotham XLight', sans-serif; color: white; font-size: 13px">Animée par un goût pour la cuisine végétale, Sarah aura brillament réussi à réinventer les champignons en dessert.</li>
+                                <li class="list-group-item text-center" style="font-family: 'Gotham XLight', sans-serif; color: white; font-size: 20px">Pancake sarrasin, Purée de fruits et girolles, Girolles au caramel et agrumes, Brochette de girolles</li>
+                                <li class="list-group-item text-center" style="font-family: 'Gotham XLight', sans-serif; color: white; font-size: 20px">Allergènes - Aucun</li>
+                            </ul>
+                        </div>
+                        <div class="card p-5 text-center" style="width: 25rem; font-family: 'Gotham', sans-serif; color: white; font-size: 25px; border-color: white">
+                            <div class="card-header">
+                                Chocologie d'Adrien
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item text-center" style="font-family: 'Gotham XLight', sans-serif; color: white; font-size: 13px">Ne vous détrompez pas, tout est comestible, même le gobelet réalisé en sucre !</li>
+                                <li class="list-group-item text-center" style="font-family: 'Gotham XLight', sans-serif; color: white; font-size: 20px">Sucre pour le moulage, Sponge Cake, Clace champignon, Émulsion chocolat</li>
+                                <li class="list-group-item text-center" style="font-family: 'Gotham XLight', sans-serif; color: white; font-size: 20px">Allergènes - Aucun</li>
+                            </ul>
+                        </div>
+                        <div class="card p-5 text-center" style="width: 25rem; font-family: 'Gotham', sans-serif; color: white; font-size: 25px; border-color: white">
+                            <div class="card-header">
+                                Double Coeur Coulant de Danny
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item text-center" style="font-family: 'Gotham XLight', sans-serif; color: white; font-size: 13px">Se surpassant sans cesse Danny n'aura pas fait un mais bien deux coeurs coulants dans son dessert pour un maximum de gourmandise.</li>
+                                <li class="list-group-item text-center" style="font-family: 'Gotham XLight', sans-serif; color: white; font-size: 20px">Coeur coulant chocolat, Coeur coulant caramel beurre salé, Ganache chocolat</li>
+                                <li class="list-group-item text-center" style="font-family: 'Gotham XLight', sans-serif; color: white; font-size: 20px">Allergènes - Aucun</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div>
+                        <p class="text-white text-center p-5" style="font-family: 'Gotham XLight', sans-serif;font-size:42px">Cocktails</p>
+                    </div>
+                    <div class="d-flex flex-direction-row justify-content-evenly">
+                        <div class="card p-5 text-center" style="width: 25rem; font-family: 'Gotham', sans-serif; color: white; font-size: 25px; border-color: white">
+                            <div class="card-header">
+                                Tinto de Verano de los Amigos
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item text-center" style="font-family: 'Gotham XLight', sans-serif; color: white; font-size: 13px">Venez découvrir le plaisir d'un vrai cocktail à l'Espagnole.</li>
+                                <li class="list-group-item text-center" style="font-family: 'Gotham XLight', sans-serif; color: white; font-size: 20px">Limonade, Vin rouge</li>
+                                <li class="list-group-item text-center" style="font-family: 'Gotham XLight', sans-serif; color: white; font-size: 20px">Allergènes - Aucun</li>
+                            </ul>
+                        </div>
+                        <div class="card p-5 text-center" style="width: 25rem; font-family: 'Gotham', sans-serif; color: white; font-size: 25px; border-color: white">
+                            <div class="card-header">
+                                Pisco Sour de Richard
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item text-center" style="font-family: 'Gotham XLight', sans-serif; color: white; font-size: 13px">En hommage à un ami Péruvien nommé Richard, un cocktail issu de la cuisine Péruvienne</li>
+                                <li class="list-group-item text-center" style="font-family: 'Gotham XLight', sans-serif; color: white; font-size: 20px">Pisco (Alcool), Jus de citron vert, Émulsion citron vert, Blanc d'Oeuf</li>
+                                <li class="list-group-item text-center" style="font-family: 'Gotham XLight', sans-serif; color: white; font-size: 20px">Allergènes - Oeuf</li>
+                            </ul>
+                        </div>
+                        <div class="card p-5 text-center" style="width: 25rem; font-family: 'Gotham', sans-serif; color: white; font-size: 25px; border-color: white">
+                            <div class="card-header">
+                                La Potion de Momo
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item text-center" style="font-family: 'Gotham XLight', sans-serif; color: white; font-size: 13px">Shooter de "La Potion" créée par notre ami Momo</li>
+                                <li class="list-group-item text-center" style="font-family: 'Gotham XLight', sans-serif; color: white; font-size: 20px">Vodka infusée au Carambar caramel</li>
+                                <li class="list-group-item text-center" style="font-family: 'Gotham XLight', sans-serif; color: white; font-size: 20px">Allergènes - Aucun</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <section>
+            <div class="p-5 text-center">
+                <h3 class="text-white text-center" style="Font-family:'Gotham Thin', sans-serif; font-size: 50px">NOS PLATS EN PHOTOS</h3>
+            </div>
+            <div class="d-flex justify-content-center">
+                <div id="carouselExample" class="carousel slide" style="width: 40%">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/img/Nappe.png" class="d-block w-100" alt="Nappe de Louise">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/Assiette.png" class="d-block w-100" alt="Assiette vide Hugo">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/Apologie.png" class="d-block w-100" alt="Apologie de l'excès">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/Flambadou.png" class="d-block w-100" alt="Flambadou">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/Apocalypse.png" class="d-block w-100" alt="Apocalypse 2063">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/140.png" class="d-block w-100" alt="140 Street burger frites">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/Champignons.png" class="d-block w-100" alt="Dessert champignons">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/Gobelet.png" class="d-block w-100" alt="Chocologie">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/Coeur.png" class="d-block w-100" alt="Double coeur coulant">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/tinto.png" class="d-block w-100" alt="tinto de verano">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/pisco.png" class="d-block w-100" alt="Pisco Sour">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/vodka.png" class="d-block w-100" alt="La Potion">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
 
-<footer class="bg-dark text-white text-center py-3">
-    <p>&copy; 2025 Gaming Site. Tous droits réservés.</p>
-</footer>
+    <footer class="text-white text-center py-3">
+        <p>&copy; 2025 La Brigade TopChef M6. Tous droits réservés.</p>
+    </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</div>
 </body>
 </html>
