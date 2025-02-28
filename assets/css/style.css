@@ -98,3 +98,11 @@ button:hover{
     border-color: #FEC735 !important;
     color: #FEC735 !important;
 }
+.bic{
+    border-color: #FFFFFF !important;
+    color: #FFFFFF !important;
+}
+.bic:hover{
+    border-color: #FABA35 !important;
+    color: #FABA35 !important;
+}

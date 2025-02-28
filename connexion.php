@@ -33,7 +33,7 @@
             <div class="row justify-content-center">
                 <div class="col-md-6">
                     <div class="card shadow">
-                        <div class="card-header bg-dark text-white">
+                        <div class="card-header text-white">
                             <h2 class="text-center" style="Font-family:'GothamBook', sans-serif;">Connexion</h2>
                         </div>
                         <div class="card-body">
@@ -100,22 +100,22 @@
                                 <input type="hidden" name="csrf_token" value="<?php echo $csrf_token; ?>">
 
                                 <div class="mb-3">
-                                    <label for="email" class="form-label">Adresse email</label>
-                                    <input type="email" class="form-control" id="email" name="email" value="<?php echo $email; ?>" required>
+                                    <label for="email" class="form-label inp" style="font-family: 'GothamBook', sans-serif; color: #FFFFFF;">Adresse email</label>
+                                    <input type="email" class="form-control" id="email" name="email" value="<?php echo $email; ?>" style="font-family: 'GothamBook', sans-serif; color: #FFFFFF;" required>
                                 </div>
 
                                 <div class="mb-3">
-                                    <label for="password" class="form-label">Mot de passe</label>
-                                    <input type="password" class="form-control" id="password" name="password" required>
+                                    <label for="password" class="form-label inp" style="font-family: 'GothamBook', sans-serif; color: #FFFFFF;">Mot de passe</label>
+                                    <input type="password" class="form-control" id="password" name="password" style="font-family: 'GothamBook', sans-serif; color: #FFFFFF;" required>
                                 </div>
 
                                 <div class="d-grid gap-2">
-                                    <button type="submit" class="btn btn-primary btn-lg" style="Font-family:'GothamBook', sans-serif;">Se connecter</button>
+                                    <button type="submit" class="btn bic btn-lg" style="Font-family:'GothamBook', sans-serif;">Se connecter</button>
                                 </div>
                             </form>
 
                             <div class="mt-3 text-center">
-                                <p>Vous n'avez pas de compte ? <a href="inscription.php" class="text-success">Inscrivez-vous ici</a></p>
+                                <p style="font-family: 'GothamBook', sans-serif; color: #FFFFFF;">Vous n'avez pas de compte ? <a href="inscription.php" class="nav-link lien">Inscrivez-vous ici</a></p>
                             </div>
                         </div>
                     </div>

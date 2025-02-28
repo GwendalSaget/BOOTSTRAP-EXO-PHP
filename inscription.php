@@ -32,7 +32,7 @@
             <div class="row justify-content-center">
                 <div class="col-md-8">
                     <div class="card shadow">
-                        <div class="card-header bg-dark text-white">
+                        <div class="card-header text-white">
                             <h2 class="text-center" style="Font-family:'GothamBook', sans-serif;">Inscription</h2>
                         </div>
                         <div class="card-body">
@@ -122,47 +122,47 @@
                                 <input type="hidden" name="csrf_token" value="<?php echo $csrf_token; ?>">
 
                                 <div class="mb-3">
-                                    <label for="nom" class="form-label">Nom</label>
-                                    <input type="text" class="form-control" id="nom" name="nom" value="<?php echo $nom; ?>" required>
+                                    <label for="nom" class="form-label" style="font-family: 'GothamBook', sans-serif; color: #FFFFFF;">Nom</label>
+                                    <input type="text" class="form-control" id="nom" name="nom" value="<?php echo $nom; ?>" style="font-family: 'GothamBook', sans-serif; color: #FFFFFF;" required>
                                 </div>
 
                                 <div class="mb-3">
-                                    <label for="prenom" class="form-label">Prénom</label>
-                                    <input type="text" class="form-control" id="prenom" name="prenom" value="<?php echo $prenom; ?>" required>
+                                    <label for="prenom" class="form-label" style="font-family: 'GothamBook', sans-serif; color: #FFFFFF;">Prénom</label>
+                                    <input type="text" class="form-control" id="prenom" name="prenom" value="<?php echo $prenom; ?>" style="font-family: 'GothamBook', sans-serif; color: #FFFFFF;" required>
                                 </div>
 
                                 <div class="mb-3">
-                                    <label for="adresse" class="form-label">Adresse postale</label>
-                                    <textarea class="form-control" id="adresse" name="adresse" rows="2" required><?php echo $adresse; ?></textarea>
+                                    <label for="adresse" class="form-label" style="font-family: 'GothamBook', sans-serif; color: #FFFFFF;">Adresse postale</label>
+                                    <textarea class="form-control" id="adresse" name="adresse" rows="2" style="font-family: 'GothamBook', sans-serif; color: #FFFFFF;" required><?php echo $adresse; ?></textarea>
                                 </div>
 
                                 <div class="mb-3">
-                                    <label for="phone" class="form-label">Téléphone</label>
-                                    <textarea class="form-control" id="phone" name="phone" rows="2" required><?php echo $phone; ?></textarea>
+                                    <label for="phone" class="form-label" style="font-family: 'GothamBook', sans-serif; color: #FFFFFF;">Téléphone</label>
+                                    <textarea class="form-control" id="phone" name="phone" rows="2" style="font-family: 'GothamBook', sans-serif; color: #FFFFFF;" required><?php echo $phone; ?></textarea>
                                 </div>
 
                                 <div class="mb-3">
-                                    <label for="email" class="form-label">Adresse email</label>
-                                    <input type="email" class="form-control" id="email" name="email" value="<?php echo $email; ?>" required>
+                                    <label for="email" class="form-label" style="font-family: 'GothamBook', sans-serif; color: #FFFFFF;">Adresse email</label>
+                                    <input type="email" class="form-control" id="email" name="email" value="<?php echo $email; ?>" style="font-family: 'GothamBook', sans-serif; color: #FFFFFF;" required>
                                 </div>
 
                                 <div class="mb-3">
-                                    <label for="date_naissance" class="form-label">Date de naissance</label>
-                                    <input type="date" class="form-control" id="date_naissance" name="date_naissance" value="<?php echo $date_naissance; ?>" required>
+                                    <label for="date_naissance" class="form-label" style="font-family: 'GothamBook', sans-serif; color: #FFFFFF;">Date de naissance</label>
+                                    <input type="date" class="form-control" id="date_naissance" name="date_naissance" value="<?php echo $date_naissance; ?>" style="font-family: 'GothamBook', sans-serif; color: #FFFFFF;" required>
                                 </div>
 
                                 <div class="mb-3">
-                                    <label for="password" class="form-label">Mot de passe</label>
-                                    <input type="password" class="form-control" id="password" name="password" required>
+                                    <label for="password" class="form-label" style="font-family: 'GothamBook', sans-serif; color: #FFFFFF;">Mot de passe</label>
+                                    <input type="password" class="form-control" id="password" name="password" style="font-family: 'GothamBook', sans-serif; color: #FFFFFF;" required>
                                 </div>
 
                                 <div class="d-grid gap-2">
-                                    <button type="submit" class="btn btn-success btn-lg" style="Font-family:'GothamBook', sans-serif;">S'inscrire</button>
+                                    <button type="submit" class="btn bic btn-lg" style="Font-family:'GothamBook', sans-serif;">S'inscrire</button>
                                 </div>
                             </form>
 
                             <div class="mt-3 text-center">
-                                <p>Vous avez déjà un compte ? <a href="connexion.php" class="text-primary">Connectez-vous ici</a></p>
+                                <p style="font-family: 'GothamBook', sans-serif; color: #FFFFFF;">Vous avez déjà un compte ? <a href="connexion.php" class="nav-link lien">Connectez-vous ici</a></p>
                             </div>
                         </div>
                     </div>
