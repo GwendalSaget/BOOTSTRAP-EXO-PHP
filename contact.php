@@ -100,7 +100,7 @@ $reservations = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 </div>
             </div>
         </nav>
-        <!-- FIN MENU NAVIGATION-->
+
     </header>
     <main>
         <section class="container">
