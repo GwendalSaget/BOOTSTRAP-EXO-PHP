@@ -38,7 +38,7 @@
                         <div class="card-body">
                             <?php
 
-                            $nom = $prenom = $adresse = $email = $date_naissance = $password = "";
+                            $nom = $prenom = $adresse = $email = $date_naissance = $password = $phone = "";
                             $error = "";
                             $success = "";
                             session_start();
@@ -62,11 +62,12 @@
                                         $nom = htmlspecialchars(trim($_POST['nom']));
                                         $prenom = htmlspecialchars(trim($_POST['prenom']));
                                         $adresse = htmlspecialchars(trim($_POST['adresse']));
-                                        $email = filter_var(trim($_POST['email']), FILTER_SANITIZE_EMAIL);
                                         $date_naissance = htmlspecialchars(trim($_POST['date_naissance']));
+                                        $email = filter_var(trim($_POST['email']), FILTER_SANITIZE_EMAIL);
+                                        $phone = number_format((float)$_POST['phone']);
                                         $password = $_POST['password'];
 
-                                        if (empty($nom) || empty($prenom) || empty($adresse) || empty($email) || empty($date_naissance) || empty($password)) {
+                                        if (empty($nom) || empty($prenom) || empty($adresse) || empty($email) || empty($date_naissance) || empty($password) || empty($phone)) {
                                             $error = "Tous les champs sont obligatoires.";
                                         } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
                                             $error = "Format d'email invalide.";
@@ -81,15 +82,16 @@
 
                                                 $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
-                                                $stmt = $pdo->prepare("INSERT INTO utilisateurs (nom, prenom, adresse, email, date_naissance, password) 
-                                                                VALUES (:nom, :prenom, :adresse, :email, :date_naissance, :password)");
+                                                $stmt = $pdo->prepare("INSERT INTO utilisateurs (nom, prenom, adresse, email, date_naissance, password, phone) 
+                                                                VALUES (:nom, :prenom, :adresse, :email, :date_naissance, :password, :phone)");
 
                                                 $stmt->bindParam(':nom', $nom);
                                                 $stmt->bindParam(':prenom', $prenom);
-                                                $stmt->bindParam(':adresse', $adresse);
                                                 $stmt->bindParam(':email', $email);
                                                 $stmt->bindParam(':date_naissance', $date_naissance);
+                                                $stmt->bindParam(':adresse', $adresse);
                                                 $stmt->bindParam(':password', $hashed_password);
+                                                $stmt->bindParam(':phone', $phone);
 
                                                 $stmt->execute();
                                                 $success = "Inscription réussie ! Vous pouvez maintenant vous connecter.";
@@ -97,7 +99,7 @@
                                                 $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
                                                 $csrf_token = $_SESSION['csrf_token'];
 
-                                                $nom = $prenom = $adresse = $email = $date_naissance = "";
+                                                $nom = $prenom = $adresse = $email = $date_naissance = $phone = "";
                                             }
                                         }
                                     } catch(PDOException $e) {
@@ -132,6 +134,11 @@
                                 <div class="mb-3">
                                     <label for="adresse" class="form-label">Adresse postale</label>
                                     <textarea class="form-control" id="adresse" name="adresse" rows="2" required><?php echo $adresse; ?></textarea>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="phone" class="form-label">Téléphone</label>
+                                    <textarea class="form-control" id="phone" name="phone" rows="2" required><?php echo $phone; ?></textarea>
                                 </div>
 
                                 <div class="mb-3">

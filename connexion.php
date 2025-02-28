@@ -66,17 +66,15 @@
                                         if (empty($email) || empty($password)) {
                                             $error = "Tous les champs sont obligatoires.";
                                         } else {
-                                            $stmt = $pdo->prepare("SELECT id, nom, prenom, password FROM utilisateurs WHERE email = :email");
+                                            $stmt = $pdo->prepare("SELECT id, nom, prenom, password, phone FROM utilisateurs WHERE email = :email");
                                             $stmt->bindParam(':email', $email);
                                             $stmt->execute();
                                             $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
                                             if ($user && password_verify($password, $user['password'])) {
-
                                                 $_SESSION['user_id'] = $user['id'];
                                                 $_SESSION['user_nom'] = $user['nom'];
                                                 $_SESSION['user_prenom'] = $user['prenom'];
-
                                                 $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
 
                                                 header("Location: accueil.html");
