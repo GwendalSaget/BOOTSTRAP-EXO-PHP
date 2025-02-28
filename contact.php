@@ -95,6 +95,9 @@ $reservations = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         <li class="nav-item">
                             <a class="nav-link lien" href="profile.php">Profil</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link lien" href="index.html">Déconnexion</a>
+                        </li>
                     </ul>
                 </div>
             </div>

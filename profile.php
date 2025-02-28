@@ -122,6 +122,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['delete'])) {
                         <li class="nav-item">
                             <a class="nav-link lien" href="profile.php">Profil</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link lien" href="index.html">Déconnexion</a>
+                        </li>
                     </ul>
                 </div>
             </div>
