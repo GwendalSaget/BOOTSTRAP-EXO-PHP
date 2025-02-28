@@ -64,7 +64,7 @@
                                         $adresse = htmlspecialchars(trim($_POST['adresse']));
                                         $date_naissance = htmlspecialchars(trim($_POST['date_naissance']));
                                         $email = filter_var(trim($_POST['email']), FILTER_SANITIZE_EMAIL);
-                                        $phone = number_format((float)$_POST['phone']);
+                                        $phone = htmlspecialchars($_POST['phone']);
                                         $password = $_POST['password'];
 
                                         if (empty($nom) || empty($prenom) || empty($adresse) || empty($email) || empty($date_naissance) || empty($password) || empty($phone)) {

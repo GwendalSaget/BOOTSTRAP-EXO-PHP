@@ -35,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $email = filter_var(trim($_POST['email']), FILTER_SANITIZE_EMAIL);
         $adresse = htmlspecialchars(trim($_POST['adresse']));
         $date_naissance = htmlspecialchars(trim($_POST['date_naissance']));
-        $phone = htmlspecialchars(trim($_POST['phone']));
+        $phone = htmlspecialchars($_POST['phone']);
 
         if (empty($nom) || empty($prenom) || empty($email) || empty($phone)) {
             $error = "Tous les champs sont obligatoires.";
