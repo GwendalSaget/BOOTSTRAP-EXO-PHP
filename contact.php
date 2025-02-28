@@ -113,36 +113,36 @@ $reservations = $stmt->fetchAll(PDO::FETCH_ASSOC);
             </div>
             <div class="d-flex flex-column align-items-center">
                 <form action="contact.php" method="post">
-                    <input type="hidden" name="user_id" value="<?= $_SESSION['user_id'] ?>"> <!-- ID utilisateur connecté -->
+                    <input type="hidden" name="user_id" value="<?= $_SESSION['user_id'] ?>">
 
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" name="nom" placeholder="Nom" required>
-                        <label>Nom</label>
+                        <input type="text" class="form-control" name="nom" placeholder="Nom" style="font-family: 'GothamBook', sans-serif; color: #FFFFFF;" required>
+                        <label style="font-family: 'GothamBook', sans-serif; color: #FFFFFF;">Nom</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" name="prenom" placeholder="Prénom" required>
-                        <label>Prénom</label>
+                        <input type="text" class="form-control" name="prenom" placeholder="Prénom" style="font-family: 'GothamBook', sans-serif; color: #FFFFFF;" required>
+                        <label style="font-family: 'GothamBook', sans-serif; color: #FFFFFF;">Prénom</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control" name="email" placeholder="E-mail" required>
-                        <label>E-mail</label>
+                        <input type="email" class="form-control" name="email" placeholder="E-mail" style="font-family: 'GothamBook', sans-serif; color: #FFFFFF;" required>
+                        <label style="font-family: 'GothamBook', sans-serif; color: #FFFFFF;">E-mail</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" name="telephone" placeholder="Téléphone" required>
-                        <label>Téléphone</label>
+                        <input type="text" class="form-control" name="telephone" placeholder="Téléphone" style="font-family: 'GothamBook', sans-serif; color: #FFFFFF;" required>
+                        <label style="font-family: 'GothamBook', sans-serif; color: #FFFFFF;" >Téléphone</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="datetime-local" class="form-control" name="date_rdv" required>
-                        <label>Date et Heure</label>
+                        <input type="datetime-local" class="form-control" name="date_rdv" style="font-family: 'GothamBook', sans-serif; color: #FFFFFF;" required>
+                        <label style="font-family: 'GothamBook', sans-serif; color: #FFFFFF;" >Date et Heure</label>
                     </div>
-                    <button type="submit" name="submit_reservation" class="btn btn-primary">
+                    <button type="submit" name="submit_reservation" class="btn bic">
                         Réserver
                     </button>
                 </form>
             </div>
 
             <h2 class="text-center text-white mt-5">Vos réservations</h2>
-            <table class="table table-dark table-hover mt-3">
+            <table class="table table-dark mt-3">
                 <thead>
                 <tr>
                     <th>Nom</th>
@@ -162,7 +162,7 @@ $reservations = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         <td><?= htmlspecialchars($res['telephone']) ?></td>
                         <td><?= htmlspecialchars($res['date_rdv']) ?></td>
                         <td>
-                            <a href="contact.php?delete=<?= $res['id'] ?>" class="btn btn-danger btn-sm"
+                            <a href="contact.php?delete=<?= $res['id'] ?>" class="btn bic btn-sm"
                                onclick="return confirm('Supprimer cette réservation ?');">Supprimer</a>
                         </td>
                     </tr>

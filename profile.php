@@ -136,8 +136,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['delete'])) {
             <div class="row justify-content-center">
                 <div class="col-md-6">
                     <div class="card shadow">
-                        <div class="card-header bg-dark text-white">
-                            <h2 class="text-center">Mon Profil</h2>
+                        <div class="card-header text-white">
+                            <h2 class="text-center" style="font-family: 'GothamBook', sans-serif; color: #FFFFFF;">Mon Profil</h2>
                         </div>
                         <div class="card-body">
                             <?php if (!empty($error)): ?>
@@ -151,32 +151,32 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['delete'])) {
                                 <input type="hidden" name="csrf_token" value="<?php echo $csrf_token; ?>">
 
                                 <div class="mb-3">
-                                    <label for="nom" class="form-label">Nom</label>
-                                    <input type="text" class="form-control" id="nom" name="nom" value="<?php echo htmlspecialchars($user['nom']); ?>" required>
+                                    <label for="nom" class="form-label" style="font-family: 'GothamBook', sans-serif; color: #FFFFFF;">Nom</label>
+                                    <input type="text" class="form-control" id="nom" name="nom" value="<?php echo htmlspecialchars($user['nom']); ?>" style="font-family: 'GothamBook', sans-serif; color: #FFFFFF;" required>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="prenom" class="form-label">Prénom</label>
-                                    <input type="text" class="form-control" id="prenom" name="prenom" value="<?php echo htmlspecialchars($user['prenom']); ?>" required>
+                                    <label for="prenom" class="form-label" style="font-family: 'GothamBook', sans-serif; color: #FFFFFF;">Prénom</label>
+                                    <input type="text" class="form-control" id="prenom" name="prenom" value="<?php echo htmlspecialchars($user['prenom']); ?>" style="font-family: 'GothamBook', sans-serif; color: #FFFFFF;" required>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="email" class="form-label">Email</label>
-                                    <input type="email" class="form-control" id="email" name="email" value="<?php echo htmlspecialchars($user['email']); ?>" required>
+                                    <label for="email" class="form-label" style="font-family: 'GothamBook', sans-serif; color: #FFFFFF;">Email</label>
+                                    <input type="email" class="form-control" id="email" name="email" value="<?php echo htmlspecialchars($user['email']); ?>" style="font-family: 'GothamBook', sans-serif; color: #FFFFFF;" required>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="phone" class="form-label">Téléphone</label>
-                                    <input type="text" class="form-control" id="phone" name="phone" value="<?php echo htmlspecialchars($user['phone']); ?>" required>
+                                    <label for="phone" class="form-label" style="font-family: 'GothamBook', sans-serif; color: #FFFFFF;">Téléphone</label>
+                                    <input type="text" class="form-control" id="phone" name="phone" value="<?php echo htmlspecialchars($user['phone']); ?>" style="font-family: 'GothamBook', sans-serif; color: #FFFFFF;" required>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="adresse" class="form-label">Adresse</label>
-                                    <input type="text" class="form-control" id="adresse" name="adresse" value="<?php echo htmlspecialchars($user['adresse']); ?>">
+                                    <label for="adresse" class="form-label" style="font-family: 'GothamBook', sans-serif; color: #FFFFFF;">Adresse</label>
+                                    <input type="text" class="form-control" id="adresse" name="adresse" style="font-family: 'GothamBook', sans-serif; color: #FFFFFF;" value="<?php echo htmlspecialchars($user['adresse']); ?>">
                                 </div>
                                 <div class="mb-3">
-                                    <label for="date_naissance" class="form-label">Date de naissance</label>
-                                    <input type="date" class="form-control" id="date_naissance" name="date_naissance" value="<?php echo htmlspecialchars($user['date_naissance']); ?>">
+                                    <label for="date_naissance" class="form-label" style="font-family: 'GothamBook', sans-serif; color: #FFFFFF;">Date de naissance</label>
+                                    <input type="date" class="form-control" id="date_naissance" name="date_naissance" style="font-family: 'GothamBook', sans-serif; color: #FFFFFF;" value="<?php echo htmlspecialchars($user['date_naissance']); ?>">
                                 </div>
 
                                 <div class="d-grid gap-2">
-                                    <button type="submit" name="update" class="btn btn-primary">Mettre à jour</button>
+                                    <button type="submit" name="update" class="btn bic">Mettre à jour</button>
                                 </div>
                             </form>
 
@@ -185,7 +185,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['delete'])) {
                             <form method="post" onsubmit="return confirm('Voulez-vous vraiment supprimer votre compte ? Cette action est irréversible.');">
                                 <input type="hidden" name="csrf_token" value="<?php echo $csrf_token; ?>">
                                 <div class="d-grid gap-2">
-                                    <button type="submit" name="delete" class="btn btn-danger">Supprimer mon compte</button>
+                                    <button type="submit" name="delete" class="btn bic">Supprimer mon compte</button>
                                 </div>
                             </form>
 
