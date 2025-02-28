@@ -74,7 +74,6 @@ $reservations = $stmt->fetchAll(PDO::FETCH_ASSOC);
         z-index: -1;">
     </div>
     <header>
-        <!-- MENU NAVIGATION-->
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="accueil.html"><img class="logo" src ="assets/img/LogoTopChef.png" alt ="Logo du restaurant"></a>
