@@ -1,0 +1,25 @@
+Acteurs :
+- Utilisateur : Une personne qui souhaite accéder au site du restaurant, créer un compte, se connecter, réserver une table et gérer ses informations.
+
+Cas d'Utilisation :
+
+1 Création de Compte
+- L'utilisateur saisit ses informations personnelles (nom, prénom, email, mot de passe, adresse, téléphone).
+- Le système valide les informations si tous les champs sont renseignés.
+
+2 Connexion
+- L'utilisateur entre ses identifiants (email et mot de passe).
+- Le système vérifie les informations et accorde l'accès si elles sont valides.
+
+3 Prise de Rendez-vous
+- L'utilisateur se connecte et accède à la page de réservation.
+- L'utilisateur remplit les informations nécessaires (date, heure, nom, prénom, mail, téléphone).
+- Le système met en lien l'id de session avec l'id de l'user correspondant dans la database.
+
+4 Modification des Informations Personnelles
+- L'utilisateur peut modifier ses informations personnelles (nom, prénom, adresse, email, téléphone).
+- Le système met à jour la base de données avec les nouvelles informations.
+
+5 Suppression de Compte
+- L'utilisateur souhaite supprimer son compte.
+- Le système vérifie la demande et supprime les informations associées à cet utilisateur dans la base de données (id de session de l'utilisateur).
